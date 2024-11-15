@@ -1,9 +1,18 @@
 package com.example.crud.Entity;
 
 public class JournalEntry {
-    private Long id;
-    private String title;
-    private String content;
+
+    Long id;
+    String title;
+    String content;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -13,14 +22,6 @@ public class JournalEntry {
         this.title = title;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
     public String getContent() {
         return content;
     }
@@ -28,4 +29,6 @@ public class JournalEntry {
     public void setContent(String content) {
         this.content = content;
     }
+
+
 }
