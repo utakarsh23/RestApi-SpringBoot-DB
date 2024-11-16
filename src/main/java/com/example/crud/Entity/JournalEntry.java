@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Objects;
 
-@Document(collection = "journal_entries") /* Document(Row) named journal_entries  --> it says that the following class is mapped with the mongoDB */
+@Document(collection = "journal_entriess") /* Document(Row) named journal_entries  --> it says that the following class is mapped with the mongoDB */
 public class JournalEntry {
 
     @Id //to map as primary key
