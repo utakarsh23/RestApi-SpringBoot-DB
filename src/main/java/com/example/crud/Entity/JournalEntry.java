@@ -8,18 +8,18 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Objects;
 
-@Document(collection = "journal_entries") /* Document(Row) --> it says that the following class is mapped with the mongoDB */
+@Document(collection = "journal_entries") /* Document(Row) named journal_entries  --> it says that the following class is mapped with the mongoDB */
 public class JournalEntry {
 
     @Id //to map as primary key
-    private ObjectId id;
-    private String title;
-    private String content;
-    private LocalDateTime date;
+    private ObjectId id; //id as an object
+    private String title; //title of the Description
+    private String content; //Description / Items to be written to post
+    private LocalDateTime date; //Time so that we can check the posted time of the item
 
 
     //getters and setters
-    public LocalDateTime getDate() {
+    public LocalDateTime getDate() { //LocalDateTime -> func with time n things to work
         return date;
     }
 
